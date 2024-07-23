@@ -1,0 +1,152 @@
+.main{
+    width: 100%;   
+    padding: var(--common-padding);
+}
+
+.main .topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--main-bold-text-color);
+    /* background-color: red; */
+}
+
+.main .topBar .rightBx .filterBx{
+    position: relative;
+}
+
+.main .topBar .rightBx .filterBx > p{
+    cursor: pointer;
+}
+
+.main .topBar .rightBx .filterBx .filter-wrapper{
+    position: absolute;
+    width: 190px;
+    padding: 1.4rem 1.6rem;
+    margin-top: 2rem;
+    display: flex;
+    z-index: 9999;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 10px 20px rgba(72,84,159,.25);
+    background-color: var(--filterbox-bg-color);
+}
+
+.main .topBar .rightBx .filterBx .filter-box label{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main .topBar .leftBx span{
+    font-size: 0.8rem;
+    color: var(--main-primary-text-color);
+}
+
+.main .topBar .rightBx{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main .topBar .rightBx .add-invoice-btn{
+    background-color: #7c5dfa;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem 0.7rem;
+}
+
+.main .topBar .rightBx .add-invoice-btn > span{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #7c5dfa;
+}
+
+.main .topBar .rightBx .add-invoice-btn:is(:active){
+    opacity: 0.8;
+}
+
+.invoices-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin: 1.4rem 0;
+}
+
+.invoices-cards .invoice-card{
+    background-color: var(--box-bg-color);
+    border-radius: 0.4rem;
+    padding: 1.3rem;
+    display: flex;
+    color: var(--main-primary-text-color);
+    align-items: center;
+    justify-content: space-between;
+    /* transition: 3s;  */
+}
+
+.invoices-cards .invoice-card:is(:active, :hover){
+    border: 2px solid var(--primary-clr);
+}
+
+.invoices-cards .invoice-card .invoice-id{
+    font-size: 1rem;
+}
+
+.invoices-cards .invoice-card .invoice-date{
+    font-size: 0.9rem;
+}
+
+.invoices-cards .invoice-card .invoice-price{
+    font-weight: 700;
+}
+
+.payment-status-tag{
+    position: relative;
+    background-color: var(--tag-clr);
+    font-size: 0.86rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    padding: 0.7rem 1.8rem;   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-status-tag::before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -0.1rem;
+    margin-left: 1rem;
+}
+
+.payment-status-tag.status-paid{
+    background-color: rgba(51, 214, 159, 0.06);
+    color: rgba(51, 214, 159, 1);
+}
+
+.payment-status-tag.status-paid::before{
+    background-color: rgba(51, 214, 159, 1);
+}
+
+.payment-status-tag.status-pending{
+    color: rgba(255, 143, 0, 1);
+    background-color: rgba(255, 143, 0, 0.06);
+}
+
+.payment-status-tag.status-pending::before{
+    background-color: rgba(255, 143, 0, 1);
+}

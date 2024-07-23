@@ -1,0 +1,41 @@
+{
+    "invoices": [
+        {
+            "id": 1,
+            "transactionDetails": [
+                {
+                    "name":  "bill from",
+                    "details": {
+                        "streetAddress": "",
+                        "city": "",
+                        "postCode": "",
+                        "country": ""
+                    }
+                },
+                {
+                    "name": "bill to",
+                    "details": {
+                        "name": "",
+                        "email": "",
+                        "streetAddress": "",
+                        "city": "",
+                        "postCode": "",
+                        "country": ""
+                    }
+                }
+            ],
+            "isPaid": false,
+            "issueDate": "",
+            "paymentTerms": "",
+            "projectDescription": "",
+            "items": [
+                {
+                    "name": "",
+                    "quantity": "",
+                    "price": "",
+                    "total": ""                   
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--layout-aside-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.theme-toggler{
+    cursor: pointer;
+    color: var(--layout-aside-icon-color);
+}
+
+.theme-toggler > i:hover{
+    color: #fff;
+}

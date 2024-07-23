@@ -1,0 +1,116 @@
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 520px;
+    height: max-content;
+    padding: 1.2rem 2rem;
+    background-color: var(--form-bg-color);
+}
+
+.inputBx-heading{
+    color: var(--main-bold-text-color);
+    font-size: 1.8rem;
+}
+
+.sidebar .formBx {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.sidebar .formBx .inputBx {
+    display: flex;
+    flex-direction: column;
+} 
+
+.sidebar .formBx .inputBx label{
+    display: block;
+    font-size: 0.87rem;
+    margin-bottom: 0.3rem;
+    color: var(--main-tertiary-text-color);
+}
+
+.sidebar .formBx .inputBx input, select{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.76rem 0.6rem;
+    border-radius: 0.2rem;
+    outline: none;
+    background-color: var(--box-bg-color);
+    color: var(--main-bold-text-color);
+    border: 1px solid var(--checkbox-bg-color);
+}
+
+.sidebar .formBx .inputBx:has(.box){
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+}
+
+.sidebar .formBx .inputBx .heading{
+    color: #7c5dfa;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+.sidebar .items-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.4rem 0;
+}
+
+.sidebar .items-container .leftBx{
+    display: grid;
+    grid-gap: 1rem;
+    place-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn-add-item{
+    margin: 0.9rem 0;
+} 
+
+.sidebar .btnsBx{
+    width: 100%;
+    position: sticky;
+    bottom: 1.2rem;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.3rem;
+}
+
+.sidebar .btnsBx .rightBx{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn-add-item, .discard-btn, .cancel-btn{
+    color: #9277ff;
+    background-color: var(--button-edit-bg-color);
+}
+
+.btn-add-item:hover, .discard-btn:hover{
+    background-color: var(--button-edit-bg-color-hover);
+}
+
+.save-changes-btn, .save-send-btn{
+    background-color: #7c5dfa;
+    color: #fff;
+}
+
+.fa-trash{
+    cursor: pointer;
+    color: #888eb0;
+}
+
+.fa-trash:hover{
+    color: red;
+}
+
+.item-total-price{
+    color: var(--main-bold-text-color);
+}
